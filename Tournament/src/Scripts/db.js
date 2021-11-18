@@ -1,4 +1,4 @@
 module.exports = {
-  //local MongoDB deployment ->
+  // MongoDB Atlas URI
   "URI": "mongodb+srv://Webengers:webengerspass@tournament.gdc0d.mongodb.net/Tournament?retryWrites=true&w=majority"
 };
