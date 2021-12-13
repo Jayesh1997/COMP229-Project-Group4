@@ -16,8 +16,8 @@
      
     h1 {
         text-align:center;
-        color:#eee01d;;
-        -webkit-text-stroke: 1px black;
+        color:black;
+        /* -webkit-text-stroke: 1px black; */
     }
      
     /* styling background image */
@@ -54,25 +54,25 @@
         <div class="col-md-12" >
             <form class="form"  [formGroup]="tourForm" (ngSubmit)="onSubmit()">
                 <div class="form-group mb-2" >
-                    <label for="nameTextField"><span style="color: #eee01d;">Name </span></label>
+                    <label for="nameTextField"><span style="color:black">Name </span></label>
                     <input type="text" class="form-control" id="nameTextField" 
                     placeholder="Enter Tournament Name" formControlName="name" required>
                 </div>
                 <div class="form-group mb-2" >
-                    <label for="numberTextField"><span style="color: #eee01d;">Number of Players </span></label>
+                    <label for="numberTextField"><span style="color: black">Number of Players </span></label>
                     <input type="text" class="form-control" id="numberTextField" 
                     placeholder="Enter Number of Players" formControlName="players" required>
                 </div>
                 <div class="form-group mb-2" >
-                    <label for="scheduleTextField"><span style="color: #eee01d;"> Date </span></label>
+                    <label for="scheduleTextField"><span style="color:black"> Date </span></label>
                     <input type="text" class="form-control" id="scheduleTextField" 
                     placeholder="Enter Date" formControlName="schedule" required>
                 </div>
-                <div class="form-group mb-2" >
+                <!-- <div class="form-group mb-2" >
                     <label for="scheduleTextField"><span style="color: #eee01d;"> Time </span></label>
                     <input type="text" class="form-control" id="scheduleTextField" 
                     placeholder="Enter Time" formControlName="schedule" required>
-                </div>
+                </div> -->
 
 
                 <button class="btn-primary btn mb-2" type="submit">
