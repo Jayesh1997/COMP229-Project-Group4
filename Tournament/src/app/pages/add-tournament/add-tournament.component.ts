@@ -25,6 +25,7 @@ export class AddTournamentComponent implements OnInit {
     this.tourForm = this.formBuilder.group({
       _id: [],
       tour: ['', Validators.required],
+      game: ['', Validators.required],
       date: ['', Validators.required],
       num: ['', Validators.required]
     });
