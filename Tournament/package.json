@@ -10,6 +10,10 @@
     "e2e": "ng e2e",
     "json": "json-server data.js -p 3500 -m authMiddleware.js"
   },
+  "engines": {
+    "node": "^12.18.3",
+    "npm": "^6.0.0"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.0.0",
