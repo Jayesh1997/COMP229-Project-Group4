@@ -22,6 +22,7 @@ import { AuthComponent } from './admin/auth/auth.component';
 import { RegisterComponent } from './admin/register/register.component';
 
 import { JwtModule, JwtHelperService, JwtInterceptor } from '@auth0/angular-jwt';
+import { RouterModule } from '@angular/router';
 
 export function jwtTokenGetter(): string
 {
@@ -43,16 +44,19 @@ export function jwtTokenGetter(): string
     EditTournamentComponent,
     AuthComponent,
     RegisterComponent
-    
+
   ],
   imports: [
     BrowserModule,
-    
+
     AppRoutingModule,
     TournamentModule,
-    
+
     FormsModule,
     ReactiveFormsModule,
+    RouterModule.forRoot([{
+      path: '', redirectTo: '/login', pathMatch: 'full'
+    }]),
     JwtModule.forRoot({
       config: {
         tokenGetter: jwtTokenGetter
